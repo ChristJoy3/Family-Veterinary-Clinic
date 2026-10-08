@@ -1,26 +1,444 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant on-dark (&:where(.on-dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/*
+ * Palette built from the logo's navy ink (#22305E) and its off-white field,
+ * warmed with ivory, oat and a terracotta accent for calls to action.
+ */
+@theme {
+  --color-ivory: #fbf7f1;
+  --color-oat: #efe6d8;
+  --color-oat-deep: #e4d8c4;
+  --color-navy: #22305e;
+  --color-navy-deep: #19244a;
+  --color-navy-soft: #3a4677;
+  --color-mist: #e6e9f3;
+  --color-periwinkle: #b9c1dd;
+  --color-ink: #2b3045;
+  --color-muted: #555b6e;
+  --color-terracotta: #a9532f;
+  --color-terracotta-deep: #8c4225;
+  --color-clay: #c9734f;
+  --color-sage: #a9c2ae;
+  --color-alert: #7f3a1f;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 28px;
+  --shadow-soft: 0 1px 2px rgb(34 48 94 / 0.04), 0 8px 24px -8px rgb(34 48 94 / 0.12), 0 24px 48px -24px rgb(34 48 94 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(34 48 94 / 0.05), 0 16px 40px -12px rgb(34 48 94 / 0.22);
+
+  --animate-marquee: marquee 60s linear infinite;
+  --animate-kenburns: kenburns 22s ease-in-out infinite alternate;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes kenburns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.09) translate(-1%, -1.5%);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6.5rem;
+  }
+  body {
+    background: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: var(--font-display);
+    font-variation-settings: "SOFT" 100, "WONK" 0;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-navy);
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-terracotta);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: var(--color-periwinkle);
+    color: var(--color-navy-deep);
+  }
+}
+
+@layer components {
+  .container-x {
+    width: 100%;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-x {
+      padding-inline: 2rem;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-terracotta);
+  }
+  .on-dark .eyebrow {
+    color: var(--color-periwinkle);
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.2;
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  .btn-primary {
+    background: var(--color-terracotta);
+    color: #fff;
+    box-shadow: 0 10px 24px -12px rgb(140 66 37 / 0.7);
+  }
+  .btn-primary:hover {
+    background: var(--color-terracotta-deep);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--color-navy);
+    border: 2px solid var(--color-navy);
+  }
+  .btn-secondary:hover {
+    background: var(--color-navy);
+    color: var(--color-ivory);
+  }
+  .btn-light {
+    background: var(--color-ivory);
+    color: var(--color-navy);
+  }
+  .btn-light:hover {
+    background: #fff;
+  }
+  .btn-ghost-light {
+    border: 2px solid rgb(251 247 241 / 0.6);
+    color: var(--color-ivory);
+  }
+  .btn-ghost-light:hover {
+    background: rgb(251 247 241 / 0.12);
+  }
+  .btn-sm {
+    min-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9375rem;
+    background: rgb(255 255 255 / 0.7);
+    border: 1px solid var(--color-oat-deep);
+    color: var(--color-navy);
+  }
+  .btn-sm:hover {
+    background: #fff;
+    border-color: var(--color-periwinkle);
+  }
+
+  .card {
+    background: #fff;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .arch {
+    border-radius: 999px 999px var(--radius-card) var(--radius-card);
+  }
+
+  .link {
+    color: var(--color-terracotta);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+  }
+  .link:hover {
+    color: var(--color-terracotta-deep);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--color-oat-deep);
+    background: #fff;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+  .chip:hover {
+    border-color: var(--color-periwinkle);
+  }
+  .chip[aria-pressed="true"],
+  .chip[aria-selected="true"],
+  input:checked + .chip {
+    background: var(--color-navy);
+    border-color: var(--color-navy);
+    color: var(--color-ivory);
+  }
+  input:focus-visible + .chip {
+    outline: 3px solid var(--color-terracotta);
+    outline-offset: 3px;
+  }
+
+  .field {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    border-radius: 16px;
+    border: 1.5px solid var(--color-oat-deep);
+    background: #fff;
+    color: var(--color-ink);
+    transition: border-color 0.2s ease;
+  }
+  .field:focus {
+    border-color: var(--color-navy);
+    outline: none;
+    box-shadow: 0 0 0 4px rgb(185 193 221 / 0.6);
+  }
+
+  .prose-article h2 {
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .prose-article h3 {
+    font-size: 1.375rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose-article p {
+    margin-bottom: 1.1rem;
+  }
+  .prose-article ul {
+    margin: 0 0 1.25rem 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .prose-article a {
+    color: var(--color-terracotta);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+/* ---------- Motion ---------- */
+
+/* `html.motion` is set before paint only when the visitor allows motion. */
+html.motion [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+}
+html.motion [data-hero-line] > span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(105%);
+}
+html.motion [data-bone] path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.marquee-track {
+  animation: var(--animate-marquee);
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+.kenburns {
+  animation: var(--animate-kenburns);
+  transform-origin: 60% 40%;
+}
+
+/* Flip cards */
+.flip {
+  perspective: 1400px;
+}
+.flip-tilt {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-out;
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+}
+.flip-inner {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: rotateY(var(--flip, 0deg));
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.flip.is-flipped .flip-inner,
+.flip:has(.flip-toggle:focus-visible) .flip-inner,
+.flip:has(.flip-back :focus-visible) .flip-inner {
+  --flip: 180deg;
+}
+@media (hover: hover) and (pointer: fine) {
+  .flip:hover .flip-inner {
+    --flip: 180deg;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* Loader */
+html.loader-seen #loader {
+  display: none;
+}
+html.motion #loader [data-l] {
+  opacity: 0;
+}
+html.motion:not(.loader-seen) #header-logo {
+  opacity: 0;
+}
+@keyframes loader-failsafe {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Thin scrollbars inside swipe rails */
+.rail {
+  scrollbar-width: none;
+}
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .marquee-track {
+    animation: none;
+  }
+  .kenburns {
+    animation: none;
+  }
+  .flip-inner {
+    transform: none !important;
+  }
+  .flip-back {
+    transform: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .flip.is-flipped .flip-back,
+  .flip:has(.flip-toggle:focus-visible) .flip-back,
+  .flip:has(.flip-back :focus-visible) .flip-back {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
+  .flip:hover .flip-back {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Paw cursor trail */
+.paw-print {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: paw-fade 1.1s ease-out forwards;
+}
+@keyframes paw-fade {
+  15% {
+    opacity: 0.22;
+  }
+  to {
+    opacity: 0;
+  }
 }

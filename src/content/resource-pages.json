@@ -1,0 +1,930 @@
+[
+ {
+  "slug": "poisonous-plants",
+  "title": "Poisonous Plants",
+  "excerpt": "There are a number of common plants which may be toxic to dogs and cats and should be avoided. These include:",
+  "body": [
+   {
+    "t": "p",
+    "text": "There are a number of common plants which may be toxic to dogs and cats and should be avoided. These include:"
+   },
+   {
+    "t": "li",
+    "text": "Arum Lily"
+   },
+   {
+    "t": "li",
+    "text": "Autumn Crocus"
+   },
+   {
+    "t": "li",
+    "text": "Australian Flame Tree"
+   },
+   {
+    "t": "li",
+    "text": "Avocado"
+   },
+   {
+    "t": "li",
+    "text": "Azalea Baneberry"
+   },
+   {
+    "t": "li",
+    "text": "Bird Of Paradise"
+   },
+   {
+    "t": "li",
+    "text": "Bishop's Weed"
+   },
+   {
+    "t": "li",
+    "text": "Black Laurel"
+   },
+   {
+    "t": "li",
+    "text": "Black Locust"
+   },
+   {
+    "t": "li",
+    "text": "Bleeding Heart"
+   },
+   {
+    "t": "li",
+    "text": "Bloodroot"
+   },
+   {
+    "t": "li",
+    "text": "Bluebonnet"
+   },
+   {
+    "t": "li",
+    "text": "Blue-Green Algae"
+   },
+   {
+    "t": "li",
+    "text": "Boxwood"
+   },
+   {
+    "t": "li",
+    "text": "Bracken Fern"
+   },
+   {
+    "t": "li",
+    "text": "Buckthorn"
+   },
+   {
+    "t": "li",
+    "text": "Bulb Flowers"
+   },
+   {
+    "t": "li",
+    "text": "Burdock"
+   },
+   {
+    "t": "li",
+    "text": "Cacao"
+   },
+   {
+    "t": "li",
+    "text": "Camel Bush"
+   },
+   {
+    "t": "li",
+    "text": "Caladium"
+   },
+   {
+    "t": "li",
+    "text": "Calla Lily"
+   },
+   {
+    "t": "li",
+    "text": "Cardinal Flower"
+   },
+   {
+    "t": "li",
+    "text": "Chalice"
+   },
+   {
+    "t": "li",
+    "text": "Cherry Tree"
+   },
+   {
+    "t": "li",
+    "text": "Chinaberry Tree"
+   },
+   {
+    "t": "li",
+    "text": "Clematis"
+   },
+   {
+    "t": "li",
+    "text": "Cocklebur"
+   },
+   {
+    "t": "li",
+    "text": "Coffee"
+   },
+   {
+    "t": "li",
+    "text": "Coral Plant"
+   },
+   {
+    "t": "li",
+    "text": "Coriander"
+   },
+   {
+    "t": "li",
+    "text": "Dieffenbachia"
+   },
+   {
+    "t": "li",
+    "text": "Elderberry"
+   },
+   {
+    "t": "li",
+    "text": "Elephant Ear (Taro)"
+   },
+   {
+    "t": "li",
+    "text": "Eucalyptus"
+   },
+   {
+    "t": "li",
+    "text": "Euonymus"
+   },
+   {
+    "t": "li",
+    "text": "False Hellebore"
+   },
+   {
+    "t": "li",
+    "text": "Flame Tree"
+   },
+   {
+    "t": "li",
+    "text": "Felt Plant"
+   },
+   {
+    "t": "li",
+    "text": "Firethorn"
+   },
+   {
+    "t": "li",
+    "text": "Four O'Clock"
+   },
+   {
+    "t": "li",
+    "text": "Foxglove"
+   },
+   {
+    "t": "li",
+    "text": "Glottidium"
+   },
+   {
+    "t": "li",
+    "text": "Golden Chain"
+   },
+   {
+    "t": "li",
+    "text": "Ground Cherry"
+   },
+   {
+    "t": "li",
+    "text": "Heaths"
+   },
+   {
+    "t": "li",
+    "text": "Heliotrope"
+   },
+   {
+    "t": "li",
+    "text": "Hemlock"
+   },
+   {
+    "t": "li",
+    "text": "Henbane"
+   },
+   {
+    "t": "li",
+    "text": "Holly"
+   },
+   {
+    "t": "li",
+    "text": "Honeysuckle"
+   },
+   {
+    "t": "li",
+    "text": "Horse Chestnut"
+   },
+   {
+    "t": "li",
+    "text": "Horsetail"
+   },
+   {
+    "t": "li",
+    "text": "Hydrangea"
+   },
+   {
+    "t": "li",
+    "text": "English Ivy"
+   },
+   {
+    "t": "li",
+    "text": "Jasmine"
+   },
+   {
+    "t": "li",
+    "text": "Jimsonweed"
+   },
+   {
+    "t": "li",
+    "text": "Lantana"
+   },
+   {
+    "t": "li",
+    "text": "Larkspur"
+   },
+   {
+    "t": "li",
+    "text": "Lily Of The Valley"
+   },
+   {
+    "t": "li",
+    "text": "Easter Lily"
+   },
+   {
+    "t": "li",
+    "text": "Lupine"
+   },
+   {
+    "t": "li",
+    "text": "Marijuana"
+   },
+   {
+    "t": "li",
+    "text": "Mandrake"
+   },
+   {
+    "t": "li",
+    "text": "Mexican Poppy"
+   },
+   {
+    "t": "li",
+    "text": "Milkweed"
+   },
+   {
+    "t": "li",
+    "text": "Vetch"
+   },
+   {
+    "t": "li",
+    "text": "Yellow Jasmine"
+   },
+   {
+    "t": "li",
+    "text": "Mistletoe"
+   },
+   {
+    "t": "li",
+    "text": "Mock Orange"
+   },
+   {
+    "t": "li",
+    "text": "Monkshood"
+   },
+   {
+    "t": "li",
+    "text": "Moonseed"
+   },
+   {
+    "t": "li",
+    "text": "Morning Glory"
+   },
+   {
+    "t": "li",
+    "text": "Mountain Laurel"
+   },
+   {
+    "t": "li",
+    "text": "Mushrooms"
+   },
+   {
+    "t": "li",
+    "text": "Nightshades"
+   },
+   {
+    "t": "li",
+    "text": "Oak"
+   },
+   {
+    "t": "li",
+    "text": "Oleander"
+   },
+   {
+    "t": "li",
+    "text": "Periwinkle"
+   },
+   {
+    "t": "li",
+    "text": "Philodendron"
+   },
+   {
+    "t": "li",
+    "text": "Pigweed"
+   },
+   {
+    "t": "li",
+    "text": "Poinciana"
+   },
+   {
+    "t": "li",
+    "text": "Poinsettia"
+   },
+   {
+    "t": "li",
+    "text": "Poison Ivy"
+   },
+   {
+    "t": "li",
+    "text": "Poison Oak"
+   },
+   {
+    "t": "li",
+    "text": "Pokeweed"
+   },
+   {
+    "t": "li",
+    "text": "Potato Shoots"
+   },
+   {
+    "t": "li",
+    "text": "Privet"
+   },
+   {
+    "t": "li",
+    "text": "Pyricantha"
+   },
+   {
+    "t": "li",
+    "text": "Rain Tree"
+   },
+   {
+    "t": "li",
+    "text": "Ranunculus (Buttercup)"
+   },
+   {
+    "t": "li",
+    "text": "Rape"
+   },
+   {
+    "t": "li",
+    "text": "Red Maple"
+   },
+   {
+    "t": "li",
+    "text": "Snowdrop"
+   },
+   {
+    "t": "li",
+    "text": "Spurges"
+   },
+   {
+    "t": "li",
+    "text": "Sweet Pea"
+   },
+   {
+    "t": "li",
+    "text": "Tansy"
+   },
+   {
+    "t": "li",
+    "text": "Tobacco"
+   },
+   {
+    "t": "li",
+    "text": "Wisteria"
+   },
+   {
+    "t": "li",
+    "text": "Yews"
+   }
+  ],
+  "sourceUrl": "https://www.familyveterinaryclinic.com/poisonous-plants.pml"
+ },
+ {
+  "slug": "how-to-videos",
+  "title": "How-To Videos",
+  "excerpt": "",
+  "body": [
+   {
+    "t": "h3",
+    "text": "How to give a cat a pill"
+   },
+   {
+    "t": "video",
+    "src": "https://www.youtube.com/embed//S-pYM4VVNaI"
+   },
+   {
+    "t": "h3",
+    "text": "How to brush a dog's teeth"
+   },
+   {
+    "t": "video",
+    "src": "https://www.youtube.com/embed/nbi2Fsj95Ik?rel=0&wmode=transparent"
+   },
+   {
+    "t": "h3",
+    "text": "How to clean your pet's ears"
+   },
+   {
+    "t": "video",
+    "src": "https://www.youtube.com/embed/99x64TF8ppU"
+   },
+   {
+    "t": "h3",
+    "text": "How to give your pet an injection"
+   },
+   {
+    "t": "video",
+    "src": "https://www.youtube.com/embed/F10GT08AfYE"
+   }
+  ],
+  "sourceUrl": "https://www.familyveterinaryclinic.com/how-to-videos.pml"
+ },
+ {
+  "slug": "pet-travel",
+  "title": "Pet Travel",
+  "excerpt": "International Travel Checklist PDF",
+  "body": [
+   {
+    "t": "p",
+    "text": "[International Travel Checklist PDF](/docs/international-travel-checklist.pdf)"
+   },
+   {
+    "t": "p",
+    "text": "[International Travel Flyer PDF](/docs/international-travel-flyer.pdf)"
+   },
+   {
+    "t": "p",
+    "text": "[International Travel Roadmap PDF](/docs/international-travel-roadmap.pdf)"
+   },
+   {
+    "t": "p",
+    "text": "[Preparing for your CVI Appointment PDF](/docs/preparing-for-your-cvi-appointment.pdf)"
+   }
+  ],
+  "sourceUrl": "https://www.familyveterinaryclinic.com/pet-travel.pml"
+ },
+ {
+  "slug": "links",
+  "title": "Links",
+  "excerpt": "Here are a list of organizations that have great resources for animal kind. Below are useful links to emergency services, holistic health, animal control, pet…",
+  "body": [
+   {
+    "t": "h",
+    "text": "Useful Links"
+   },
+   {
+    "t": "p",
+    "text": "Here are a list of organizations that have great resources for animal kind. Below are useful links to emergency services, holistic health, animal control, pet care/lodging and much more. If you have questions please feel free to contact us."
+   },
+   {
+    "t": "p",
+    "text": "[Anne Arundel County Animal Control](https://www.aacounty.org/AnimalControl)"
+   },
+   {
+    "t": "p",
+    "text": "410-222-8900"
+   },
+   {
+    "t": "p",
+    "text": "[Anne Arundel Veterinary Emergency Clinic](https://www.aavec.com/)"
+   },
+   {
+    "t": "p",
+    "text": "410-224-0331"
+   },
+   {
+    "t": "p",
+    "text": "[ASPCA Poison Control](https://www.aspca.org/pet-care/animal-poison-control)"
+   },
+   {
+    "t": "p",
+    "text": "888-426-4435"
+   },
+   {
+    "t": "p",
+    "text": "[Dogs and Cats Veterinary Referral](https://www.dcvetreferral.com/)"
+   },
+   {
+    "t": "p",
+    "text": "301-809-8800"
+   },
+   {
+    "t": "p",
+    "text": "[Dogwood Acres](https://www.dogwoodacres.com/)"
+   },
+   {
+    "t": "p",
+    "text": "410-798-4776"
+   },
+   {
+    "t": "h3",
+    "text": "Marcie Baer"
+   },
+   {
+    "t": "p",
+    "text": "410-992-0080"
+   },
+   {
+    "t": "p",
+    "text": "[Holistic Wellness and Acupuncture](https://www.marciebaeracupuncture.com/animal-acupuncture/)"
+   },
+   {
+    "t": "p",
+    "text": "[SPCA of Anne Arundel County](https://www.aacspca.org/)"
+   },
+   {
+    "t": "p",
+    "text": "410-268-4388"
+   }
+  ],
+  "sourceUrl": "https://www.familyveterinaryclinic.com/links.pml"
+ },
+ {
+  "slug": "local-businesses-we-support",
+  "title": "Local Businesses We Support",
+  "excerpt": "As veterinarians in the Crofton, Gambrills, and Bowie area we feel it is our duty to support the community that supports us. In the spirit of that support, Family…",
+  "body": [
+   {
+    "t": "p",
+    "text": "As veterinarians in the Crofton, Gambrills, and Bowie area we feel it is our duty to support the community that supports us. In the spirit of that support, Family Vet Clinic, the oldest Crofton Vet Hospital in the area, shops where we live. Please check out these local businesses we support and try one out, we are sure you will be satisfied. Thank you very much!"
+   },
+   {
+    "t": "h",
+    "text": "Conquest Brazilian Jiu Jitsu, Mixed Martial Arts & Fitness"
+   },
+   {
+    "t": "p",
+    "text": "BJJ Conquest"
+   },
+   {
+    "t": "p",
+    "text": "311 Serendipity Dr"
+   },
+   {
+    "t": "p",
+    "text": "Millersville, MD 21108"
+   },
+   {
+    "t": "p",
+    "text": "[bjjconquest.com](https://bjjconquest.com/)"
+   },
+   {
+    "t": "p",
+    "text": "Whether your goal is self defense, self discipline, physical fitness, or competition, BJJ Conquest provides an ideal training environment for every student. We pride ourselves on the highest level of professional instruction and safely. Train your mind, body, and spirit. Jiu Jitsu, a way of life."
+   },
+   {
+    "t": "h",
+    "text": "Crunchies Natural Pet Foods"
+   },
+   {
+    "t": "p",
+    "text": "2421 Crofton Lane, Suite 11"
+   },
+   {
+    "t": "p",
+    "text": "Crofton, Maryland 21114"
+   },
+   {
+    "t": "p",
+    "text": "[www.crunchies.com](https://www.crunchies.com/)"
+   },
+   {
+    "t": "p",
+    "text": "Crunchies Natural Pet Food Stores located just outside Annapolis in Crofton, Maryland. Crunchies has the largest selection of foods, vitamins, and supplements in the area for both dogs and cats."
+   },
+   {
+    "t": "p",
+    "text": "The shop has been open since 1995 and has already established a large and growing list of satisfied customers. The owners started by selling the high quality pet food from their living room, but quickly outgrew this and another shop until they finally expanded into their current location on Crofton Lane."
+   },
+   {
+    "t": "h",
+    "text": "Dogwood Acres Pet Retreat"
+   },
+   {
+    "t": "p",
+    "text": "439 West Central Avenue"
+   },
+   {
+    "t": "p",
+    "text": "Davidsonville, MD 21035"
+   },
+   {
+    "t": "p",
+    "text": "Phone: 410-798-4776"
+   },
+   {
+    "t": "p",
+    "text": "Fax: 410-798-7328"
+   },
+   {
+    "t": "p",
+    "text": "[www.dogwoodacres.com](https://www.dogwoodacres.com/)"
+   },
+   {
+    "t": "p",
+    "text": "At Dogwood Acres Pet Retreat we’ve gone to great lengths to create the region’s premiere pet lodging, daycare, training and spa facility Our goal is to create a fun and safe environment where pets love to come and play and where owners can confidently place their trust in our standards of care for their pets. With 10,000 sq. ft. of state-of-the-art interior space and acres of wooded grounds, along with our full complement of customizable care options, we offer our guests a superior experience every visit."
+   },
+   {
+    "t": "h",
+    "text": "Family Bike Shop"
+   },
+   {
+    "t": "p",
+    "text": "1286 MD-3 South, Suite #13"
+   },
+   {
+    "t": "p",
+    "text": "Crofton, MD 21114"
+   },
+   {
+    "t": "p",
+    "text": "Phone: 410.721.8244 or 301.261.3618 Fax: 410.721.8244"
+   },
+   {
+    "t": "p",
+    "text": "Store Hours: M-F 10-7, Sat 10-5, Sun 12-5"
+   },
+   {
+    "t": "p",
+    "text": "[www.familybikeshop.com](https://www.familybikeshop.com/)"
+   },
+   {
+    "t": "p",
+    "text": "Family Bike Shop is owner operated by a Crofton resident and bicycle racer/commuter. We specialize in expert repairs on all makes and models of bikes and pride ourselves on our friendly and knowledgeable customer service. We carry Moots titanium, Raleigh, Jamis, Diamondback, Giant, Redline, Surly and Niner bicycles. We also carry Torker Adult Tricycles and a wide selection of unicycles! Come experience the FBS difference!"
+   }
+  ],
+  "sourceUrl": "https://www.familyveterinaryclinic.com/local-businesses-we-support.pml"
+ },
+ {
+  "slug": "giving-back",
+  "title": "Giving Back",
+  "excerpt": "At Family Veterinary Clinic we believe that being a successful business comes with the responsibility of ~ Giving Back ~ to the community, whether that community is…",
+  "body": [
+   {
+    "t": "p",
+    "text": "At Family Veterinary Clinic we believe that being a successful business comes with the responsibility of ~ Giving Back ~ to the community, whether that community is Crofton, Gambrills, Bowie or part of the global one. Please take the time to look through this list and visit the links we have provided maybe one of these great organizations will inspire you to do the same."
+   },
+   {
+    "t": "h",
+    "text": "Animal / Environmental Organizations"
+   },
+   {
+    "t": "h3",
+    "text": "Anne Arundel County Society for the Prevention of Cruelty to Animals"
+   },
+   {
+    "t": "p",
+    "text": "As Veterinarians in the Crofton, Gambrills and Bowie area we know the need for organizations that support animals. This organization is one of the oldest and most respected when it comes to animal welfare. In addition to financial support Family Veterinary Clinic is always a participant in the Annual Walk for the Animals held at Quiet Waters Park."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.aacspca.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Chesapeake Bay Foundation"
+   },
+   {
+    "t": "p",
+    "text": "Protecting and Restoring the Chesapeake Bay. The Chesapeake Bay Foundation (CBF) fights for bold and creative solutions to the pollution that plagues the Bay and its tributaries. Across the six-state Chesapeake watershed, CBF sets the agenda, serves as a watchdog, and speaks out on behalf of the Chesapeake Bay to business, government, and the public."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.cbf.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Greyhound Pets of America"
+   },
+   {
+    "t": "p",
+    "text": "GPA / MD, Inc. is an all volunteer organization founded in 1985 by Betty Rosen and dedicated to finding responsible, loving homes for retired greyhounds and younger dogs that can’t make the grade at various tracks throughout the country–resulting in an early retirement. GPA / MD’s goal is to let people know what excellent and loving pets these gentle, retired racers make."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://gpa-md.com/wp/)"
+   },
+   {
+    "t": "h3",
+    "text": "Partnership for Animal Welfare (PAW)"
+   },
+   {
+    "t": "p",
+    "text": "The Partnership for Animal Welfare (PAW) is a non-profit group of volunteers chartered to facilitate the rescue and adoption of homeless domestic animals, mainly dogs and cats, and place them in loving and stable homes. Family Veterinary Clinic of Crofton is committed to supporting this mission through low-cost veterinary care and donations."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.paw-rescue.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Patuxent River Clean-up"
+   },
+   {
+    "t": "p",
+    "text": "The employees of Family Veterinary Clinic have been participating in “Martin Luther King Jr. Day of Service” for the last two years. For both years the Family Vet Clinic of Crofton choose to clean-up the Patuxent River at Governor Bridge Road in Davidsonville. We are happy to report that the second year saw a marked reduction in trash over the prior year. Progress! Facebook pics"
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://paxriverkeeper.org/annual-patuxent-cleanup/)"
+   },
+   {
+    "t": "h3",
+    "text": "Sierra Club"
+   },
+   {
+    "t": "p",
+    "text": "They are America’s largest and most influential grassroots environmental organization. Inspired by nature, we are 1.4 million of your friends and neighbors, working together to protect our communities and the planet."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.sierraclub.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "South River Federation"
+   },
+   {
+    "t": "p",
+    "text": "Protect means to value and respect the natural environment, including the river and the living resources that depend upon it. The Federation believes that the River is a privilege for all to enjoy and that as inhabitants of the land that ultimately determines the health of the River, we have an obligation to be good stewards of the River. In carrying out this duty to protect, the Federation reviews land use plans, advocates for strong laws and regulations and identifies and stops sources of pollution."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.southriverfederation.net/)"
+   },
+   {
+    "t": "h3",
+    "text": "World Wildlife Fund (WWF)"
+   },
+   {
+    "t": "p",
+    "text": "WWF’s way of conserving the planet’s natural resources combines their unmatched global reach with a foundation in science, it involves action at every level – from local to global – and it ensures the delivery of innovative solutions that meet the needs of both people and nature."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.worldwildlife.org/)"
+   },
+   {
+    "t": "h",
+    "text": "Human Organizations"
+   },
+   {
+    "t": "h3",
+    "text": "Anne Arundel County Food Bank"
+   },
+   {
+    "t": "p",
+    "text": "The Anne Arundel County Food Bank is a free resource bank that gives away food and donated “gently used” appliances, furniture, medical equipment, baby items, cars and other items that will help a needy family make a home and a better way of life."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.aafoodbank.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Arundel Volunteer Fire Department"
+   },
+   {
+    "t": "p",
+    "text": "Proudly serving the Crofton, Davidsonville, Gambrills and surrounding communities for over 50 years. The AVFD believes that prevention and early intervention are an indispensable part of emergency response. From free CPR and First Aid classes to Fire Prevention information, your community fire house is here to help you serve as the front line of emergency services."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.arundelfire.com/)"
+   },
+   {
+    "t": "h3",
+    "text": "Crofton Woods Elementary School"
+   },
+   {
+    "t": "p",
+    "text": "Crofton is located between Annapolis, MD and Washington, DC and is about 30 minutes south of Baltimore. At Crofton Woods, we value respect and responsibility within a rigorous, well rounded academic environment. We are an Arts Integration School with an awareness of and appreciation for the world around us. Additionally, Crofton Woods provides engaging opportunities for our students in the area of Science, Technology, Engineering and Mathematics (STEM)."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://secure.aacps.org/html/schol/Elementary/Cwes.asp)"
+   },
+   {
+    "t": "h3",
+    "text": "Davidsonville Elementary School"
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://secure.aacps.org/html/schol/Elementary/Daves.asp)"
+   },
+   {
+    "t": "h3",
+    "text": "Komen for the Cure"
+   },
+   {
+    "t": "p",
+    "text": "Susan G. Komen for the Cure®, the global leader of the breast cancer movement."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://ww5.komen.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Leukemia and Lymphoma Society"
+   },
+   {
+    "t": "p",
+    "text": "The Leukemia & Lymphoma Society (LLS) is the world’s largest voluntary (nonprofit) health organization dedicated to funding blood cancer research and providing education and patient services."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.lls.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Relay for Life of Southern Anne Arundel County"
+   },
+   {
+    "t": "p",
+    "text": "Each year, more than 4 million people in over 20 countries raise much-needed funds and awareness to save lives from cancer through the Relay For Life movement."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://relayforlife.org/)"
+   },
+   {
+    "t": "p",
+    "text": "Rotary Club of South Anne Arundel County (Bountiful Backpacks Program)"
+   },
+   {
+    "t": "p",
+    "text": "HUNGER IN THE WORLD… HUNGER IN THE UNITED STATES… HUNGER IN MARYLAND… Unfortunately, this is the grim reality for many children right here in Anne Arundel County. As the economy continues to decline, the number of hungry children rises. Although they are fed nutritious meals at school, the weekends at home are often much different. In an effort to sustain these children over the weekend, the South AA County Rotary Club, as part of its hunger initiative, is launching the Bountiful Backpack Project. By providing several food items sent home via backpacks, the hope is that these children will not go hungry over the weekend. Read about the (Bountiful Backpacks)"
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.southcountyrotary.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Second Chance"
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.secondchanceinc.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "South River Robotics Team (Home of the Powerhawks)"
+   },
+   {
+    "t": "p",
+    "text": "At Family Veterinary Clinic we know the importance of the child animal bond, anyone that has seen kids and animals interact knows this. Whether it is your local elementary, private high school or any learning establishment in between, please support your local schools, they are the backbone of our communities."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://powerhawks.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "St. Elizabeth Ann Seton"
+   },
+   {
+    "t": "p",
+    "text": "Welcome to St. Elizabeth Ann Seton Parish. We pray that you will find this web site useful in learning about the parish and all of the opportunities that exist here for you and your family."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.seaseton.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Students First"
+   },
+   {
+    "t": "p",
+    "text": "Inside our schools, a great teacher is the single most important factor in a child’s education. While there are many factors that influence a student’s opportunity to learn, a great teacher can help any student overcome those barriers and realize their full potential. For this reason, we believe in doing everything we can to make sure teachers are supported and all schools are able to hire and retain the best teachers possible."
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.studentsfirst.org/)"
+   },
+   {
+    "t": "h3",
+    "text": "Temple Solel"
+   },
+   {
+    "t": "p",
+    "text": "[Visit Website](https://www.templesolelmd.org/)"
+   }
+  ],
+  "sourceUrl": "https://www.familyveterinaryclinic.com/giving-back.pml"
+ }
+]
