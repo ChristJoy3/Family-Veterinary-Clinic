@@ -2,14 +2,14 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { gsap, ScrollTrigger, onRevealed, prefersReducedMotion, setLenis } from "@/lib/motion";
+import { gsap, ScrollTrigger, prefersReducedMotion, setLenis } from "@/lib/motion";
 
 const HEADER_OFFSET = -96;
 
 /**
- * Site-wide motion: Lenis smooth scroll synced to ScrollTrigger, in-page anchor
- * scrolling, fade-up reveals, bone-divider drawing and the hero entrance.
- * With reduced motion it only handles anchor focus; everything stays static.
+ * Site-wide motion: Lenis smooth scroll synced to ScrollTrigger and in-page
+ * anchor scrolling. With reduced motion it only handles anchor focus.
+ * Page-level animations live in PageMotion.
  */
 export function Motion() {
   useEffect(() => {
@@ -43,44 +43,8 @@ export function Motion() {
     };
     document.addEventListener("click", onClick);
 
-    const ctx = gsap.context(() => {
-      if (reduce) return;
-
-      ScrollTrigger.batch("[data-reveal]:not([data-hero] [data-reveal])", {
-        start: "top 90%",
-        once: true,
-        onEnter: (els) =>
-          gsap.to(els, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out", stagger: 0.08, overwrite: true }),
-      });
-
-      gsap.utils.toArray<SVGSVGElement>("[data-bone]").forEach((svg) => {
-        gsap.to(svg.querySelectorAll("path"), {
-          strokeDashoffset: 0,
-          duration: 1.3,
-          ease: "power2.inOut",
-          stagger: 0.18,
-          scrollTrigger: { trigger: svg, start: "top 92%", once: true },
-        });
-      });
-    });
-
-    const stopHero = onRevealed(() => {
-      if (reduce) return;
-      ctx.add(() => {
-        const tl = gsap.timeline();
-        tl.to("[data-hero-line] > span", { y: 0, opacity: 1, duration: 1.1, ease: "power4.out", stagger: 0.12 });
-        tl.to(
-          "[data-hero] [data-reveal]",
-          { opacity: 1, y: 0, duration: 0.9, ease: "power3.out", stagger: 0.08 },
-          0.35,
-        );
-      });
-    });
-
     return () => {
-      stopHero();
       document.removeEventListener("click", onClick);
-      ctx.revert();
       gsap.ticker.remove(tick);
       lenis?.destroy();
       setLenis(null);

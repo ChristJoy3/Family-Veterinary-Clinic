@@ -83,8 +83,8 @@ const jsonLd = {
   sameAs: [links.facebook, links.instagram],
 };
 
-/** Runs before paint: opt into motion styles and skip the loader if it already played this session. */
-const bootScript = `(function(){var d=document.documentElement;try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('motion')}catch(e){}try{if(sessionStorage.getItem('fvc-loader-seen'))d.classList.add('loader-seen')}catch(e){}})();`;
+/** Runs before paint: opt into motion styles and skip the loader if it already played this session (`?intro` replays it). */
+const bootScript = `(function(){var d=document.documentElement;try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('motion')}catch(e){}try{if(/[?&]intro\\b/.test(location.search))sessionStorage.removeItem('fvc-loader-seen');else if(sessionStorage.getItem('fvc-loader-seen'))d.classList.add('loader-seen')}catch(e){}})();`;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
