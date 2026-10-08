@@ -364,15 +364,83 @@ html.lenis body {
   overflow: clip;
 }
 
-/* Loader */
+/* Loader: the intro runs in CSS from first paint; JS only runs the exit. */
 html.loader-seen #loader {
   display: none;
 }
-html.motion #loader [data-l] {
-  opacity: 0;
-}
 html.motion:not(.loader-seen) #header-logo {
   opacity: 0;
+}
+/* No-JS failsafe; the loader cancels this as soon as it hydrates. */
+html.motion #loader {
+  animation: loader-failsafe 0.4s ease 12s forwards;
+}
+html.motion #loader .loader-outline path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: loader-draw 1s cubic-bezier(0.65, 0, 0.35, 1) 0.1s forwards;
+}
+html.motion #loader .loader-outline {
+  animation: loader-fade-out 0.4s ease 1.2s forwards;
+}
+html.motion #loader .loader-fill {
+  opacity: 0;
+  clip-path: inset(100% 0 0 0);
+  filter: blur(6px);
+  animation: loader-fill 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+}
+html.motion #loader .loader-paw {
+  opacity: 0;
+  animation:
+    loader-paw-in 0.3s ease-out calc(0.45s + var(--i) * 0.16s) forwards,
+    loader-paw-walk 1.6s ease-in-out calc(1.6s + var(--i) * 0.2s) infinite;
+}
+html.motion #loader .loader-tag {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: loader-rise 0.5s ease-out 0.95s forwards;
+}
+@keyframes loader-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes loader-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes loader-fill {
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    filter: blur(0);
+  }
+}
+@keyframes loader-paw-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes loader-paw-walk {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+@keyframes loader-rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes loader-failsafe {
   to {

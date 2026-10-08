@@ -1,5 +1,6 @@
 import { BoneDivider } from "@/components/BoneDivider";
 import { Loader } from "@/components/motion/Loader";
+import { PageMotion } from "@/components/motion/PageMotion";
 import { Clinic } from "@/components/sections/Clinic";
 import { Contact } from "@/components/sections/Contact";
 import { CtaBand } from "@/components/sections/CtaBand";
@@ -47,6 +48,7 @@ export default function Home() {
         <Faq />
         <CtaBand />
         <Contact />
+        <PageMotion />
       </main>
     </>
   );
